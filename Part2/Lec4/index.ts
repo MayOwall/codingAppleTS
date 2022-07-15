@@ -18,7 +18,7 @@
   user1.name = "may2";
 
   let user2 = new User("owall", 25);
-  user2.age = 20; // 에러
+  // user2.age = 20; // 에러
 
   // public을 이용하면 타입 지정을 생략할 수 있음
 

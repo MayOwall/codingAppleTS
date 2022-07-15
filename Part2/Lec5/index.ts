@@ -95,4 +95,11 @@
       // 이...이게 맞나..!
     }
   }
+
+  const assign3 = new Square(30, 30, "blue");
+  assign3.draw();
+  assign3.draw();
+  assign3.draw();
+  assign3.draw();
+  assign3.draw();
 }

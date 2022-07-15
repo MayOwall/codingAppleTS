@@ -43,7 +43,7 @@
     private static x = 10;
     // 자식 사용 불가, 외부 접근 불가
     public static y = 20;
-    // 자식 사용 불가, 외부 접근 가능
+    // 자식 사용 불가, 외부 접근 불가
     protected z = 30;
     // 자식 사용 가능, 외부 접근 불가능
   }
@@ -70,17 +70,17 @@
 
   class Square {
     constructor(
-      protected width: number,
-      protected height: number,
-      protected color: string
+      private width: number,
+      private height: number,
+      private color: string
     ) {
       this.width = width;
       this.height = height;
       this.color = color;
     }
     draw() {
-      const positionX = Math.floor(Math.random() * 370);
-      const positionY = Math.floor(Math.random() * 370);
+      const positionX = Math.floor(Math.random() * (400 - this.width));
+      const positionY = Math.floor(Math.random() * (400 - this.width));
 
       const box = document.createElement("div");
       box.style.width = `${this.width}px`;

@@ -1,3 +1,4 @@
+export {};
 {
   // 위치까지 고려한 배열 타입 지정 : tuple
   let bowWow: [string, boolean] = ["dog", true];

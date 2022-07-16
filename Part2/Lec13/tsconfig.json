@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "es6",
+    "strictNullChecks": true,
+    // declaration : 자동으로 d.ts 파일 생성
+    "declaration": true,
+    "typeRoots": ["./types"]
+  }
+}
